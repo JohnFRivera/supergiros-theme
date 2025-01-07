@@ -1,0 +1,315 @@
+/*
+Theme Name: SuperGIROS Norte del Valle
+Theme URI: https://intranet.sgnv.com.co/
+Author: John Freddy Rivera
+Author URI: https://tuwebsite.com
+Description: Tema personalizado para la empresa SuperGIROS en el Norte del Valle.
+Version: 1.0
+Text Domain: supergiros
+*/
+
+/* BACKGROUND COLOR */
+.bg-primary {
+  background-color: var(--sg-primary) !important;
+}
+.bg-secondary {
+  background-color: var(--sg-secondary) !important;
+}
+.bg-body {
+  background-color: var(--sg-body) !important;
+}
+.bg-body-secondary {
+  background-color: var(--sg-body-secondary) !important;
+}
+.bg-body-tertiary {
+  background-color: var(--sg-body-tertiary) !important;
+}
+
+/* BACKGROUND HOVER */
+.hover-to-body:hover {
+  transition: background 0.15s 0s ease-in-out;
+  background-color: var(--sg-body-secondary) !important;
+}
+.hover-to-secondary:hover {
+  transition: background 0.15s 0s ease-in-out;
+  background-color: var(--sg-body-secondary) !important;
+}
+.hover-to-tertiary:hover {
+  transition: background 0.15s 0s ease-in-out;
+  background-color: var(--sg-body-tertiary) !important;
+}
+
+/* TEXT COLOR */
+.text-primary {
+  color: var(--sg-primary) !important;
+}
+.text-secondary {
+  color: var(--sg-secondary) !important;
+}
+
+/* LINK COLOR */
+.link-primary {
+  color: var(--sg-primary) !important;
+  text-decoration-color: var(--sg-primary) !important;
+}
+
+/* BORDER COLOR */
+.border-primary {
+  border-color: var(--sg-primary) !important;
+}
+
+/* BUTTONS */
+.btn-primary {
+  color: #ffffff !important;
+  background-color: var(--sg-primary) !important;
+  border-color: var(--sg-primary) !important;
+  transition: all 0.15s 0s ease-in-out;
+}
+.btn-primary:hover {
+  color: #ffffff !important;
+  background-color: var(--sg-primary) !important;
+  border-color: var(--sg-primary) !important;
+  filter: brightness(1.25) !important;
+}
+.btn-outline-primary {
+  color: var(--sg-primary) !important;
+  background-color: transparent !important;
+  border-color: var(--sg-primary) !important;
+  transition: all 0.15s 0s ease-in-out;
+}
+.btn-outline-primary:hover {
+  color: #ffffff !important;
+  background-color: var(--sg-primary) !important;
+  border-color: var(--sg-primary) !important;
+}
+
+.btn-secondary {
+  color: #000000 !important;
+  background-color: var(--sg-secondary) !important;
+  border-color: var(--sg-secondary) !important;
+  transition: all 0.15s 0s ease-in-out;
+}
+.btn-secondary:hover {
+  color: #000000 !important;
+  background-color: var(--sg-secondary) !important;
+  border-color: var(--sg-secondary) !important;
+  filter: brightness(0.75) !important;
+}
+.btn-outline-secondary {
+  color: #000000 !important;
+  background-color: transparent !important;
+  border-color: var(--sg-secondary) !important;
+  transition: all 0.15s 0s ease-in-out;
+}
+.btn-outline-secondary:hover {
+  color: #000000 !important;
+  background-color: var(--sg-secondary) !important;
+  border-color: var(--sg-secondary) !important;
+  filter: brightness(0.75);
+}
+
+/* PAGINATOR */
+.page-link {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0.25rem !important;
+  box-shadow: none !important;
+  transition: all 0.15s 0s ease-in-out;
+}
+.page-link:hover {
+  background-color: var(--sg-body-secondary);
+  border-color: var(--sg-body-secondary);
+}
+.page-link.active {
+  background-color: var(--sg-primary);
+  border-color: var(--sg-primary);
+}
+
+/* DROPDOWN */
+.dropdown-item {
+  transition: all 0.15s 0s ease-in-out;
+}
+
+.dropdown-primary,
+.dropdown-primary {
+  color: var(--sg-primary);
+  background-color: transparent;
+}
+.dropdown-primary:hover,
+.dropdown-primary:focus {
+  color: #ffffff;
+  background-color: var(--sg-primary);
+}
+.dropdown-primary.active,
+.dropdown-primary:active {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: var(--sg-primary);
+}
+
+.dropdown-danger,
+.dropdown-danger {
+  color: var(--bs-danger);
+  background-color: transparent;
+}
+.dropdown-danger:hover,
+.dropdown-danger:focus {
+  color: #ffffff;
+  background-color: var(--bs-danger);
+}
+.dropdown-danger.active,
+.dropdown-danger:active {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: var(--bs-danger);
+}
+
+/* BANNERS */
+.banner-pages {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  align-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner-pages::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 25, 0.75);
+  border-radius: 0.25rem;
+  z-index: 1;
+}
+
+.banner-portafolio {
+  position: relative;
+  width: 100%;
+  background-image: url(./assets/images/banner-portafolio.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-noticias {
+  position: relative;
+  width: 100%;
+  background-image: url(./assets/images/banner-noticias.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner-noticias::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.banner-loterias {
+  position: relative;
+  width: 100%;
+  background-image: url(./assets/images/banner-loterias.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-documentos {
+  position: relative;
+  width: 100%;
+  background-image: url(./assets/images/banner-documentos.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner-documentos::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.banner-sorteos-loterias {
+  position: relative;
+  width: 100%;
+  background-image: url(./assets/images/pelotas-background.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner-sorteos-loterias::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(47, 53, 139, 0.85);
+  z-index: 1;
+}
+
+.banner-chance {
+  position: relative;
+  width: 100%;
+  background-image: url(./assets/images/coins-background.png);
+  background-size: cover;
+  background-position: center -55px;
+  background-repeat: no-repeat;
+}
+
+/* IMAGENES */
+.img-noticias {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 293 / 164;
+  object-fit: cover;
+}
+.img-loterias {
+  width: 64px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* TAMAÑOS */
+.table-sorteos {
+  width: 100%;
+  height: 405px;
+  overflow-y: auto;
+}
+
+.h-screen {
+  min-height: 840px;
+  max-height: 88vh;
+}
+
+.vratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: var(--bs-aspect-ratio);
+}
+.vratio > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vratio-3x4 {
+  --bs-aspect-ratio: 133.33%; /* Relación 3:4 => 4/3 * 100 = 133.33% */
+}
