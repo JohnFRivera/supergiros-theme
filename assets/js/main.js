@@ -1,3 +1,7 @@
+const getElement = (element) => {
+  return document.querySelector(element);
+};
+
 const innerError = (error, container) => {
   let title = '';
   let message = '';

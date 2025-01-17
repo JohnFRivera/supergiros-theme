@@ -48,47 +48,16 @@ function supergiros_scripts() {
     );
     wp_enqueue_script(
         'supergiros-main',
-        get_template_directory_uri() . '/assets/js/main.js',
+        get_template_directory_uri().'/assets/js/main.js',
         array(),
         null,
         true,
     );
     if (is_home()) {
-        wp_enqueue_script(
-            'supergiros-main-fetch',
-            get_template_directory_uri() . '/assets/js/main-fetch.js',
-            array(),
-            null,
-            true
-        );
-        wp_enqueue_script(
-            'supergiros-scroll-animation',
-            get_template_directory_uri() . '/assets/js/animacionScroll.js',
-            array(),
-            null,
-            true
-        );
-        wp_enqueue_script(
-            'supergiros-fetch-last-news',
-            get_template_directory_uri() . '/assets/js/fetch-last-news.js',
-            array(),
-            null,
-            true
-        );
-        wp_enqueue_script(
-            'supergiros-fetch-lottery-results',
-            get_template_directory_uri() . '/assets/js/fetch-lottery-results.js',
-            array(),
-            null,
-            true
-        );
-        wp_enqueue_script(
-            'supergiros-chance-simulator',
-            get_template_directory_uri() . '/assets/js/chance-simulator.js',
-            array(),
-            null,
-            true
-        );
+        wp_enqueue_script( 'supergiros-localstorage', get_template_directory_uri() . '/assets/js/localStorage.js', array(), null, true );
+        wp_enqueue_script( 'supergiros-fetch', get_template_directory_uri() . '/assets/js/fetch.js', array(), null, true );
+        wp_enqueue_script( 'supergiros-index', get_template_directory_uri().'/assets/js/page-index.js', array(), null, true );
+        wp_enqueue_script( 'supergiros-chance-simulator', get_template_directory_uri() . '/assets/js/chance-simulator.js', array(), null, true );
     }
     if (is_page( 'ingresar' )) {
         wp_enqueue_script(
@@ -100,82 +69,16 @@ function supergiros_scripts() {
         );
     }
     if (is_archive()) {
+        $post_type = sgnv_get_post_type();
+        wp_enqueue_script( 'supergiros-localstorage', get_template_directory_uri() . '/assets/js/localStorage.js' );
+        wp_enqueue_script( 'supergiros-fetch', get_template_directory_uri() . '/assets/js/fetch.js' );
         wp_enqueue_script(
-            'supergiros-main-fetch',
-            get_template_directory_uri() . '/assets/js/main-fetch.js',
-            array(),
+            'supergiros-fetch-'.$post_type,
+            get_template_directory_uri().'/assets/js/archive-'.$post_type.'.js',
+            array('jquery'),
             null,
             true
         );
-        wp_enqueue_script(
-            'supergiros-main-posts',
-            get_template_directory_uri() . '/assets/js/main-posts.js',
-            array(),
-            null,
-            true,
-        );
-        $post_type = get_post_type();
-        if (empty($post_type)) {
-            $queried_object = get_queried_object();
-            $taxonomy_object = get_taxonomy($queried_object->taxonomy);
-            $post_type = $taxonomy_object->object_type[0];
-        }
-        switch ($post_type) {
-            case 'portafolio':
-                wp_enqueue_script(
-                    'supergiros-loop-portafolio',
-                    get_template_directory_uri() . '/assets/js/loop-portafolio.js',
-                    array(),
-                    null,
-                    true
-                );
-                break;
-            case 'noticias':
-                wp_enqueue_script(
-                    'supergiros-loop-noticias',
-                    get_template_directory_uri() . '/assets/js/loop-noticias.js',
-                    array(),
-                    null,
-                    true
-                );
-                break;
-            case 'planes_de_premios':
-                wp_enqueue_script(
-                    'supergiros-loop-planes_de_premios',
-                    get_template_directory_uri() . '/assets/js/loop-planes_de_premios.js',
-                    array(),
-                    null,
-                    true
-                );
-                break;
-            case 'resultados_y_secos':
-                wp_enqueue_script(
-                    'supergiros-loop-resultados_y_secos',
-                    get_template_directory_uri() . '/assets/js/loop-resultados_y_secos.js',
-                    array(),
-                    null,
-                    true
-                );
-                break;
-            case 'documentos':
-                wp_enqueue_script(
-                    'supergiros-loop-documentos',
-                    get_template_directory_uri() . '/assets/js/loop-documentos.js',
-                    array(),
-                    null,
-                    true
-                );
-                break;
-            case 'post':
-                wp_enqueue_script(
-                    'supergiros-loop-post',
-                    get_template_directory_uri() . '/assets/js/loop-post.js',
-                    array(),
-                    null,
-                    true
-                );
-                break;
-        }
     }
 }
 function supergiros_admin_scripts() {

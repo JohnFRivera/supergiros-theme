@@ -1,5 +1,7 @@
 <?php
 get_header();
+
+echo sgnv_get_post_type();
 ?>
 
 <main class="container py-5">

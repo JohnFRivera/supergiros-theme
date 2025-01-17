@@ -18,7 +18,7 @@ const spanPrmRetencion = document.getElementById('spanPrmRetencion');
 const spanPrmNeto = document.getElementById('spanPrmNeto');
 
 const IVA = 0.19;
-const LIMITE = 2259000;
+const LIMITE = 2390000;
 const RETENCION = 0.2;
 
 // Funciones

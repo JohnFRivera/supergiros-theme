@@ -8,3 +8,5 @@ require_once get_template_directory() . '/inc/enqueues.php';
 require_once get_template_directory() . '/inc/customizer.php';
 require_once get_template_directory() . '/inc/shortcodes.php';
 require_once get_template_directory() . '/inc/helpers.php';
+require_once get_template_directory() . '/inc/rest_api.php';
+require_once get_template_directory() . '/inc/login.php';

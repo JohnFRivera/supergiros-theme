@@ -25,6 +25,13 @@ Text Domain: supergiros
   background-color: var(--sg-body-tertiary) !important;
 }
 
+.text-bg-primary {
+  background-color: var(--sg-primary) !important;
+}
+.text-bg-secondary {
+  background-color: var(--sg-secondary) !important;
+}
+
 /* BACKGROUND HOVER */
 .hover-to-body:hover {
   transition: background 0.15s 0s ease-in-out;
@@ -173,6 +180,7 @@ Text Domain: supergiros
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 0.25rem;
 }
 .banner-pages::before {
   content: '';
@@ -181,14 +189,14 @@ Text Domain: supergiros
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 25, 0.75);
+  background-color: rgba(47, 53, 139, 0.75);
   border-radius: 0.25rem;
   z-index: 1;
 }
 
 .banner-portafolio {
-  position: relative;
   width: 100%;
+  position: relative;
   background-image: url(./assets/images/banner-portafolio.webp);
   background-size: cover;
   background-position: center;
@@ -196,8 +204,9 @@ Text Domain: supergiros
 }
 
 .banner-noticias {
-  position: relative;
   width: 100%;
+  height: 180px;
+  position: relative;
   background-image: url(./assets/images/banner-noticias.jpg);
   background-size: cover;
   background-position: center;
@@ -210,8 +219,9 @@ Text Domain: supergiros
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
+  border-radius: 0.25rem;
 }
 
 .banner-loterias {
@@ -264,7 +274,7 @@ Text Domain: supergiros
 .banner-chance {
   position: relative;
   width: 100%;
-  background-image: url(./assets/images/coins-background.png);
+  background-image: url(./assets/images/banner-chance-simulator.png);
   background-size: cover;
   background-position: center -55px;
   background-repeat: no-repeat;
@@ -312,4 +322,18 @@ Text Domain: supergiros
 
 .vratio-3x4 {
   --bs-aspect-ratio: 133.33%; /* Relación 3:4 => 4/3 * 100 = 133.33% */
+}
+
+/* HOVERS */
+.post-translate {
+  transition: all 0.15s 0s ease-in-out;
+}
+.post-translate:hover {
+  transform: translateY(-5px);
+}
+.post-translate-x {
+  transition: all 0.15s 0s ease-in-out;
+}
+.post-translate-x:hover {
+  transform: translateX(-5px);
 }

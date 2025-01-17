@@ -1,2 +1,2 @@
 <?php
-get_template_part( '/templates/parts/footer-main' );
+get_template_part( '/template-parts/footer/footer', 'main' );
