@@ -194,25 +194,25 @@ Text Domain: supergiros
   z-index: 1;
 }
 
-.banner-portafolio {
+.banner-supergiros {
   width: 100%;
   position: relative;
-  background-image: url(./assets/images/banner-portafolio.webp);
+  background-image: url(./assets/images/banners/banner-supergiros-ball.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.banner-noticias {
+.banner-ssvsa {
   width: 100%;
   height: 180px;
   position: relative;
-  background-image: url(./assets/images/banner-noticias.jpg);
+  background-image: url(./assets/images/banners/banner-ssvsa.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.banner-noticias::before {
+.banner-ssvsa::before {
   content: '';
   position: absolute;
   top: 0;
@@ -227,21 +227,21 @@ Text Domain: supergiros
 .banner-loterias {
   position: relative;
   width: 100%;
-  background-image: url(./assets/images/banner-loterias.webp);
+  background-image: url(./assets/images/banners/banner-lottery.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.banner-documentos {
+.banner-primary {
   position: relative;
   width: 100%;
-  background-image: url(./assets/images/banner-documentos.jpg);
+  background-image: url(./assets/images/banners/banner-primary.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.banner-documentos::before {
+.banner-primary::before {
   content: '';
   position: absolute;
   top: 0;
@@ -259,6 +259,7 @@ Text Domain: supergiros
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 0.25rem;
 }
 .banner-sorteos-loterias::before {
   content: '';
@@ -267,14 +268,15 @@ Text Domain: supergiros
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(47, 53, 139, 0.85);
+  background-color: rgba(33, 38, 109, 0.85);
   z-index: 1;
+  border-radius: 0.25rem;
 }
 
 .banner-chance {
   position: relative;
   width: 100%;
-  background-image: url(./assets/images/banner-chance-simulator.png);
+  background-image: url(./assets/images/banners/banner-chance-simulator.png);
   background-size: cover;
   background-position: center -55px;
   background-repeat: no-repeat;
@@ -336,4 +338,10 @@ Text Domain: supergiros
 }
 .post-translate-x:hover {
   transform: translateX(-5px);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* Crea 8 columnas de igual tamaño */
+  gap: 1rem; /* Espacio entre las celdas */
 }

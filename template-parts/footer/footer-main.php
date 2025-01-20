@@ -1,7 +1,3 @@
-<?php
-$sic_url = get_template_directory_uri() . '/assets/images/sic.png';
-?>
-
 <footer class="container-fluid">
     <div class="row bg-primary py-5">
         <div class="col">
@@ -12,15 +8,15 @@ $sic_url = get_template_directory_uri() . '/assets/images/sic.png';
                         <ul class="d-flex flex-column gap-3 list-unstyled mb-4">
                             <li class="opacity-75">
                                 <i class="bi bi-geo-alt"></i>
-                                <?php echo esc_html(get_theme_mod( 'supergiros_info_direccion', 'Carrera 5 No. 10-93 Cartago, Valle del Cauca, Colombia' )) ?>
+                                <?php echo esc_attr(get_theme_mod( 'supergiros_info_direccion', 'Carrera 5 No. 10-93 Cartago, Valle del Cauca, Colombia' )) ?>
                             </li>
                             <li class="opacity-75">
                                 <i class="bi bi-telephone"></i>
-                                <?php echo esc_html(get_theme_mod( 'supergiros_info_tel', 'PBX (602) 214 7100 ext 141' )) ?>
+                                <?php echo esc_attr(get_theme_mod( 'supergiros_info_tel', 'PBX (602) 214 7100 ext 141' )) ?>
                             </li>
                             <li class="opacity-75">
                                 <i class="bi bi-envelope-at"></i>
-                                <?php echo esc_html(get_theme_mod( 'supergiros_info_mail', 'info@ganesuperservicios.co' )) ?>
+                                <?php echo esc_attr(get_theme_mod( 'supergiros_info_mail', 'info@ganesuperservicios.co' )) ?>
                             </li>
                         </ul>
                     </section>
@@ -39,28 +35,28 @@ $sic_url = get_template_directory_uri() . '/assets/images/sic.png';
                         <ul class="d-flex flex-column gap-3 list-unstyled mb-4">
                             <li class="opacity-75">
                                 <i class="bi bi-telephone"></i>
-                                <?php echo esc_html(get_theme_mod( 'mesa_de_ayuda_tel', '318 734 704' )) ?>
+                                <?php echo esc_attr(get_theme_mod( 'mesa_de_ayuda_tel', '318 734 704' )) ?>
                             </li>
                             <li class="opacity-75">
                                 <i class="bi bi-whatsapp"></i>
-                                <?php echo esc_html(get_theme_mod( 'mesa_de_ayuda_whatsapp', '+57 318 547 8633' )) ?>
+                                <?php echo esc_attr(get_theme_mod( 'mesa_de_ayuda_whatsapp', '+57 318 547 8633' )) ?>
                             </li>
                         </ul>
                     </section>
                     <section class="col">
-                        <img class="mb-4" src="<?php echo esc_url($sic_url) ?>" alt="Imagotipo de Superintendencia de Industria y Comercio." height="52px">
+                        <img class="mb-4" src="<?php echo sgnv_get_image_url( 'logos/logo-sic.png' ); ?>" alt="Imagotipo de Superintendencia de Industria y Comercio." height="52px">
                         <ul class="d-flex flex-column gap-3 list-unstyled mb-4">
                             <li class="opacity-75">
                                 <i class="bi bi-geo-alt"></i>
-                                <?php echo esc_html(get_theme_mod( 'sic_info_direccion', 'Carrera 13 No. 27-00 Piso 1-2-4-6-7-10 Bogotá D.C, Colombia' )) ?>
+                                <?php echo esc_attr(get_theme_mod( 'sic_info_direccion', 'Carrera 13 No. 27-00 Piso 1-2-4-6-7-10 Bogotá D.C, Colombia' )) ?>
                             </li>
                             <li class="opacity-75">
                                 <i class="bi bi-telephone"></i>
-                                <?php echo esc_html(get_theme_mod( 'sic_info_tel', 'Linea Gratuita 018000910165' )) ?>
+                                <?php echo esc_attr(get_theme_mod( 'sic_info_tel', 'Linea Gratuita 018000910165' )) ?>
                             </li>
                             <li class="opacity-75">
                                 <i class="bi bi-envelope-at"></i>
-                                <?php echo esc_html(get_theme_mod( 'sic_info_mail', 'contactenos@sic.gov.co' )) ?>
+                                <?php echo esc_attr(get_theme_mod( 'sic_info_mail', 'contactenos@sic.gov.co' )) ?>
                             </li>
                         </ul>
                     </section>

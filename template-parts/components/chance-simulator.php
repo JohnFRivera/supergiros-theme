@@ -4,7 +4,7 @@
             <div class="bg-white rounded-top-circle" style="height: 85px;"></div>
         </div>
     </div>
-    <img class="position-absolute top-0 start-50 translate-middle-x mt-4" src="<?php echo esc_url(sgnv_get_image_url('logo-chance.webp')) ?>" alt="Logo Chance" width="180px">
+    <img class="position-absolute top-0 start-50 translate-middle-x mt-4" src="<?php echo esc_url(sgnv_get_image_url('logos/logo-chance.webp')) ?>" alt="Logo Chance" width="180px">
     <div class="bg-white rounded-bottom-1">
         <form class="w-50 mx-auto mb-4" id="frmSimulador">
             <label class="w-100 text-center fw-medium mb-1" style="color: #093B81;" for="ipMonto">Monto</label>

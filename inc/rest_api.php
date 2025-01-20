@@ -87,7 +87,7 @@ function supergiros_theme_post_posts( WP_REST_Request $request ) {
             $thumbnail_url = get_the_post_thumbnail_url();
             $response[] = array(
                 'id'        => get_the_ID(),
-                'thumbnail' => !empty( $thumbnail_url ) ? $thumbnail_url : sgnv_get_image_url( 'thumbnail-noticias.webp' ),
+                'thumbnail' => !empty( $thumbnail_url ) ? $thumbnail_url : sgnv_get_image_url( 'thumbnails/thumbnail-noticias.webp' ),
                 'title'     => get_the_title(),
                 'excerpt'   => get_the_excerpt(),
                 'date'      => get_the_date( 'j \d\e F, Y' ),
@@ -121,7 +121,7 @@ function supergiros_theme_post_portafolio( WP_REST_Request $request ) {
             $thumbnail_url = get_the_post_thumbnail_url();
             $response[] = array(
                 'id'        => get_the_ID(),
-                'logo'      => !empty( $thumbnail_url ) ? $thumbnail_url : sgnv_get_image_url( 'thumbnail-logo.png' ),
+                'logo'      => !empty( $thumbnail_url ) ? $thumbnail_url : sgnv_get_image_url( 'thumbnails/thumbnail-logo.png' ),
                 'title'     => get_the_title(),
                 'excerpt'   => get_the_excerpt(),
                 'link'      => get_the_permalink(),
@@ -151,7 +151,7 @@ function supergiros_theme_get_noticias_recientes() {
             $thumbnail_url = get_the_post_thumbnail_url();
             $response[] = array(
                 'id'        => get_the_ID(),
-                'thumbnail' => !empty( $thumbnail_url ) ? $thumbnail_url : sgnv_get_image_url( 'thumbnail-noticias.webp' ),
+                'thumbnail' => !empty( $thumbnail_url ) ? $thumbnail_url : sgnv_get_image_url( 'thumbnails/thumbnail-noticias.webp' ),
                 'title'     => get_the_title(),
                 'date'      => get_the_date( 'j \d\e F, Y' ),
                 'link'      => get_the_permalink(),
@@ -197,7 +197,7 @@ function supergiros_theme_post_noticias( WP_REST_Request $request ) {
             $thumbnail_url = get_the_post_thumbnail_url();
             $response[] = array(
                 'id'        => get_the_ID(),
-                'thumbnail' => !empty( $thumbnail_url ) ? $thumbnail_url : sgnv_get_image_url( 'thumbnail-noticias.webp' ),
+                'thumbnail' => !empty( $thumbnail_url ) ? $thumbnail_url : sgnv_get_image_url( 'thumbnails/thumbnail-noticias.webp' ),
                 'title'     => get_the_title(),
                 'date'      => get_the_date( 'j \d\e F, Y' ),
                 'link'      => get_the_permalink(),
@@ -334,7 +334,7 @@ function supergiros_theme_post_documentos( WP_REST_Request $request ) {
             $thumbnail_url = get_the_post_thumbnail_url();
             $response[] = array(
                 'id'        => $ID,
-                'thumbnail' => !empty( $thumbnail_url ) ? $thumbnail_url : sgnv_get_image_url( 'thumbnail-documentos.webp' ),
+                'thumbnail' => !empty( $thumbnail_url ) ? $thumbnail_url : sgnv_get_image_url( 'thumbnails/thumbnail-documentos.webp' ),
                 'title'     => get_the_title(),
                 'date'      => get_the_date( 'j \d\e F, Y' ),
                 'link'      => get_post_meta( $ID, '_documento_url', true ),

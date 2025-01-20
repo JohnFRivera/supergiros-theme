@@ -16,7 +16,7 @@ get_header();
             <i class="bi bi-calendar"></i>
         </button>
         <button class="btn btn-secondary rounded-1" type="button" id="btnScrollChance">
-            <img src="<?php echo sgnv_get_image_url( 'icon-chance.png' ) ?>" alt="Icono de Chance" width="20" height="20" />
+            <img src="<?php echo sgnv_get_image_url( 'logos/icon-chance.png' ) ?>" alt="Icono de Chance" width="20" height="20" />
         </button>
     </div>
 </div>
@@ -47,7 +47,7 @@ get_header();
                                 }
                             }
                             ?>
-                            <nav class="nav nav-underline gap-1 mb-3">
+                            <nav class="nav nav-underline border-bottom gap-1 mb-3">
                                 <?php
                                 foreach( $links as $link ) {
                                     echo '<a class="nav-noticias nav-link link-primary fw-medium border-3 py-2 px-3" href="'.$link['href'].'">'.$link['text'].'</a>';

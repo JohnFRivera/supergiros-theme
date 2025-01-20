@@ -59,19 +59,10 @@ function supergiros_scripts() {
         wp_enqueue_script( 'supergiros-index', get_template_directory_uri().'/assets/js/page-index.js', array(), null, true );
         wp_enqueue_script( 'supergiros-chance-simulator', get_template_directory_uri() . '/assets/js/chance-simulator.js', array(), null, true );
     }
-    if (is_page( 'ingresar' )) {
-        wp_enqueue_script(
-            'supergiros-show-pass',
-            get_template_directory_uri() . '/assets/js/utils/showPass.js',
-            array(),
-            null,
-            true
-        );
-    }
     if (is_archive()) {
         $post_type = sgnv_get_post_type();
-        wp_enqueue_script( 'supergiros-localstorage', get_template_directory_uri() . '/assets/js/localStorage.js' );
-        wp_enqueue_script( 'supergiros-fetch', get_template_directory_uri() . '/assets/js/fetch.js' );
+        wp_enqueue_script( 'supergiros-localstorage', get_template_directory_uri() . '/assets/js/localStorage.js', array(), null, true );
+        wp_enqueue_script( 'supergiros-fetch', get_template_directory_uri() . '/assets/js/fetch.js', array(), null, true );
         wp_enqueue_script(
             'supergiros-fetch-'.$post_type,
             get_template_directory_uri().'/assets/js/archive-'.$post_type.'.js',
